@@ -1,7 +1,6 @@
-@import "swiper/css";
-@import "swiper/css/navigation";
-@import "swiper/css/pagination";
-@import "swiper/css/scrollbar";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* image popup */
 img.mfp-img {
@@ -41,3 +40,4 @@ img.mfp-img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
+
