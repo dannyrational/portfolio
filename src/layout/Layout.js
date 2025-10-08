@@ -1,9 +1,9 @@
-import { TokyoContext } from "@/src/Context";
+import { PortfolioContext } from "@/src/Context";
 import DetailsModal from "@/src/components/popup/DetailsModal";
 import Cursor from "@/src/layout/Cursor";
 import Mobile from "@/src/layout/Mobile";
 import Sidebar from "@/src/layout/Sidebar";
-import { tokyo } from "@/src/utils";
+import { portfolio } from "@/src/utils";
 import ImageView from "components/popup/ImageView";
 import MediaPopup from "components/popup/MediaPopup";
 import NewsModal from "components/popup/NewsModal";
@@ -15,12 +15,12 @@ const Portfolio = dynamic(() => import("components/Portfolio"), {
 });
 const Layout = ({ children }) => {
   useEffect(() => {
-    tokyo.dataImage();
-    tokyo.imageToSvg();
-    tokyo.customCursor();
+    portfolio.dataImage();
+    portfolio.imageToSvg();
+    portfolio.customCursor();
   }, []);
   const { modal, serviceModal, newsModal, portfolioDetailsModal } =
-    useContext(TokyoContext);
+    useContext(PortfolioContext);
   return (
     <Fragment>
       <MediaPopup />

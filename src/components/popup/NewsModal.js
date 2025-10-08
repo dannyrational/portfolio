@@ -1,8 +1,8 @@
-import { TokyoContext } from "@/src/Context";
+import { PortfolioContext } from "@/src/Context";
 import { useContext } from "react";
 import ModalContainer from "./ModalContainer";
 const NewsModal = () => {
-  const { newsModal, setNewsModal } = useContext(TokyoContext);
+  const { newsModal, setNewsModal } = useContext(PortfolioContext);
   return (
     <ModalContainer nullValue={setNewsModal}>
       <div className="image relative overflow-hidden">
@@ -39,13 +39,13 @@ const NewsModal = () => {
       <div className="main_content w-full float-left">
         <div className="descriptions w-full float-left">
           <p className="bigger text-[#888] text-[20px] mb-[31px]">
-            Just because we can't get out and about like we normally would,
-            doesn’t mean we have to stop taking pictures. There’s still plenty
-            you can do, provided you're prepared to use some imagination. Here
+            Just because we can&apos;t get out and about like we normally would,
+            doesn&rsquo;t mean we have to stop taking pictures. There&rsquo;s still plenty
+            you can do, provided you&apos;re prepared to use some imagination. Here
             are a few ideas to keep you shooting until normal life resumes.
           </p>
           <p className="mb-[22px]">
-            Most photographers love to shoot the unusual, and you don’t get much
+            Most photographers love to shoot the unusual, and you don&rsquo;t get much
             more unusual than These Unprecedented Times. Right now everything
             counts as out of the ordinary. There are a number of remarkable
             things about these lockdown days that are worth photographing now so
@@ -70,7 +70,7 @@ const NewsModal = () => {
             show how far apart we should be.
           </p>
           <p className="mb-[22px]">
-            Pretend everything is new and that you haven’t seen it before, and
+            Pretend everything is new and that you haven&rsquo;t seen it before, and
             then you will be free to notice the leading lines, the places where
             one edge meets another in delightful geometric harmony, and how the
             ordinary things in the kitchen are transformed when the light is on

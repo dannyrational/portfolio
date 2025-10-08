@@ -1,7 +1,7 @@
 import { createContext, useCallback, useReducer } from "react";
 
 // Create Context
-const TokyoContext = createContext();
+const PortfolioContext = createContext();
 
 // Type
 const type = {
@@ -79,7 +79,7 @@ const reducer = (state, action) => {
 };
 
 // Watson State
-const TokyoState = ({ children }) => {
+const PortfolioState = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const navChange = useCallback((value) => {
@@ -132,7 +132,7 @@ const TokyoState = ({ children }) => {
     menus,
   } = state;
   return (
-    <TokyoContext.Provider
+    <PortfolioContext.Provider
       value={{
         menus,
         nav,
@@ -150,9 +150,9 @@ const TokyoState = ({ children }) => {
       }}
     >
       {children}
-    </TokyoContext.Provider>
+    </PortfolioContext.Provider>
   );
 };
 
-export default TokyoState;
-export { TokyoContext };
+export default PortfolioState;
+export { PortfolioContext };

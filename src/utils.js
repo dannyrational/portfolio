@@ -1,4 +1,4 @@
-export const tokyo = {
+export const portfolio = {
   dataImage() {
     let d = document.querySelectorAll("[data-img-url]");
     for (let i = 0; i < d.length; i++) {

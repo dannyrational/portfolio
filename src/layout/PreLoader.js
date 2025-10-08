@@ -1,9 +1,9 @@
 import { useEffect } from "react";
-import { tokyo } from "../utils";
+import { portfolio } from "../utils";
 
 const PreLoader = () => {
   useEffect(() => {
-    tokyo.preloader();
+    portfolio.preloader();
   }, []);
 
   return (

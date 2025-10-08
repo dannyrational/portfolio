@@ -1,8 +1,8 @@
-import { TokyoContext } from "@/src/Context";
+import { PortfolioContext } from "@/src/Context";
 import useClickOutside from "@/src/useClickOutside";
 import { useContext } from "react";
 const ModalContainer = ({ children, nullValue }) => {
-  const { modalToggle } = useContext(TokyoContext);
+  const { modalToggle } = useContext(PortfolioContext);
   let domNode = useClickOutside(() => {
     modalToggle(false);
     nullValue(null);

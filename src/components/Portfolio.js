@@ -1,7 +1,7 @@
 import Isotope from "isotope-layout";
 import { useContext, useEffect, useRef, useState } from "react";
-import { TokyoContext } from "../Context";
-import { tokyo } from "../utils";
+import { PortfolioContext } from "../Context";
+import { portfolio } from "../utils";
 import SectionContainer from "./SectionContainer";
 import SectionTitle from "./SectionTitle";
 const detailData = [
@@ -102,10 +102,10 @@ const Portfolio = () => {
     setFilterKey(key);
   };
   useEffect(() => {
-    tokyo.portfolioHover();
-    tokyo.dataImage();
+  portfolio.portfolioHover();
+  portfolio.dataImage();
   });
-  const { setPortfolioDetailsModal, modalToggle } = useContext(TokyoContext);
+  const { setPortfolioDetailsModal, modalToggle } = useContext(PortfolioContext);
   return (
     <SectionContainer name={"portfolio"}>
       <div className="container">

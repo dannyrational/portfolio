@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { TokyoContext } from "../Context";
+import { PortfolioContext } from "../Context";
 import SectionContainer from "./SectionContainer";
 import SectionTitle from "./SectionTitle";
 
@@ -35,7 +35,7 @@ const news = [
 ];
 
 const News = () => {
-  const { setNewsModal, modalToggle } = useContext(TokyoContext);
+  const { setNewsModal, modalToggle } = useContext(PortfolioContext);
   return (
     <SectionContainer name={"news"}>
       <div className="container">

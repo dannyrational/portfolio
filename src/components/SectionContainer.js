@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { TokyoContext } from "../Context";
+import { PortfolioContext } from "../Context";
 
 const SectionContainer = ({ name, children }) => {
-  const { nav, animation } = useContext(TokyoContext);
+  const { nav, animation } = useContext(PortfolioContext);
   return (
     <div
       id={name}
