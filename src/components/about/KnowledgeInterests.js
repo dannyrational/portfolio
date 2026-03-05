@@ -1,21 +1,30 @@
 const knowledge = [
-  { id: 1, text: "Bootstrap, Angular" },
-  { id: 2, text: "React, Vue, Laravel" },
-  { id: 3, text: "Stylus, Sass, Less" },
-  { id: 4, text: "Gulp, Webpack, Grunt" },
-  { id: 5, text: "Tweenmax, GSAP" },
+  { id: 1, text: "React, Next.js" },
+  { id: 2, text: "TypeScript, JavaScript" },
+  { id: 3, text: "PHP, REST APIs" },
+  { id: 4, text: "Tailwind CSS, Modern CSS" },
+  { id: 5, text: "Performance, Core Web Vitals" },
+  { id: 6, text: "AI Integration, OpenAI APIs" },
+  { id: 7, text: "Azure DevOps, CI/CD" },
+  { id: 8, text: "WordPress Custom Themes & Plugins" },
+  { id: 9, text: "Production Deployments, Release Management" },
 ];
+
 const interests = [
-  { id: 1, text: "Make UI/UX Design" },
-  { id: 2, text: "Create Mobile App" },
-  { id: 3, text: "Site Optimization" },
-  { id: 4, text: "Custom Website" },
-  { id: 5, text: "Learn Ecommerce" },
+  { id: 1, text: "Building AI Powered Features" },
+  { id: 2, text: "Shipping Products From Scratch" },
+  { id: 3, text: "Performance Optimization" },
+  { id: 4, text: "Clean Architecture" },
+  { id: 5, text: "UI Engineering, Design Systems" },
+  { id: 6, text: "Developer Experience, Automation" },
+  { id: 7, text: "Scalable APIs, Integrations" },
+  { id: 8, text: "WordPress Headless CMS" },
+  { id: 9, text: "AWS, Azure Cloud Services" },
 ];
 
 const KnowledgeInterests = () => {
   return (
-    <div className="tokyo_tm_skillbox w-full h-auto clear-both float-left pt-[90px] pr-[0px] pb-[90px] pl-[0px]">
+    <div className="tokyo_tm_skillbox bg-white w-full h-auto clear-both float-left pt-[90px] pr-[0px] pb-[90px] pl-[0px]">
       <div className="container">
         <div className="in w-full h-auto clear-both float-left flex">
           <div className="left w-1/2 pr-[50px]">

@@ -1,122 +1,42 @@
-import { Fragment } from "react";
 const Intro = () => {
   return (
-    <Fragment>
-      <div className="top_author_image w-full h-auto clear-both float-left relative mb-[35px]">
-        <img className="min-w-full" src="assets/img/slider/1.jpg" alt="image" />
+    <div className="author_intro flex flex-col md:flex-row items-center gap-8 md:gap-[50px]">
+      <div className="top_author_image shrink-0 h-auto relative w-full md:w-auto">
+        <img
+          className="w-full md:max-w-[375px] mx-auto md:mx-0"
+          src="assets/img/profile_bw_matte.png"
+          alt="image"
+        />
       </div>
-      <div className="about_title w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[20px] mb-[30px]">
-        <h3 className="text-[22px] font-bold">Adriano Smith</h3>
-        <span>Web Developer</span>
-      </div>
-      <div className="about_text w-full h-auto clear-both float-left border-solid border-[#DFDFDF] border-b pb-[31px] mb-[30px]">
-        <p className="mb-[11px]">
-          Hi, my name is Adriano Smith and I began using WordPress when it first
-          began. I’ve spent most of my waking hours for the last ten years
-          designing, programming and operating WordPress sites.
-        </p>
-        <p>
-          One of my specialties is taking an idea from scratch and creating a
-          full-fledged platform. I go beyond to produce sites with a unique,
-          outstanding, contemporary look-and-feel. With extensive knowledge of
-          web mechanics, I’m able to optimize complex integrations to require
-          little-to-no maintenance while running on their own for years.
-        </p>
-      </div>
-      <div className="tokyo_tm_short_info w-full h-auto clear-both float-left flex border-solid border-[#DFDFDF] border-b pb-[30px] mb-[40px]">
-        <div className="left w-1/2 pr-[50px]">
-          <div className="tokyo_tm_info w-full h-auto clear-both float-left">
-            <ul className="m-0 list-none">
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Birthday:
-                </span>
-                <span>01.07.1990</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Age:
-                </span>
-                <span>32</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Address:
-                </span>
-                <span>Ave 11, New York, USA</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Email:
-                </span>
-                <span>
-                  <a
-                    className="text-[#767676] transition-all duration-300 hover:text-black"
-                    href="mailto:portfolio@gmail.com"
-                  >
-                    portfolio@gmail.com
-                  </a>
-                </span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Phone:
-                </span>
-                <span>
-                  <a
-                    className="text-[#767676] transition-all duration-300 hover:text-black"
-                    href="tel:+77 022 177 05 05"
-                  >
-                    +77 022 177 05 05
-                  </a>
-                </span>
-              </li>
-            </ul>
-          </div>
+      <div className="author_info">
+        <div className="about_title w-full h-auto border-solid border-[#DFDFDF] border-b pb-[20px] mb-[30px]">
+          <h3 className="text-[22px] font-bold">Daniel Rodas</h3>
+          <span>Senior Frontend Developer</span>
         </div>
-        <div className="right w-1/2 pl-[50px]">
-          <div className="tokyo_tm_info">
-            <ul className="m-0 list-none">
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Nationality:
-                </span>
-                <span>USA</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Study:
-                </span>
-                <span>Univercity of Texas</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Degree:
-                </span>
-                <span>Master</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Interest:
-                </span>
-                <span>Playing Football</span>
-              </li>
-              <li className="m-0">
-                <span className="min-w-[100px] float-left mr-[10px] font-bold text-black">
-                  Freelance:
-                </span>
-                <span>Available</span>
-              </li>
-            </ul>
-          </div>
+        <div className="about_text w-full h-auto border-solid border-[#DFDFDF] border-b">
+          <p className="mb-[11px]">
+            Hi, I’m Daniel Rodas. I’ve been building web products professionally
+            since 2019, focusing on modern, high performance experiences that
+            feel great to use and hold up in production.
+          </p>
+          <p>
+            A big part of my work is taking an idea from scratch and turning it
+            into something real and reliable. I enjoy owning the full build,
+            from planning the architecture and setting up APIs to shipping a
+            polished UI and keeping performance tight. My day to day stack
+            includes React and Next.js along with PHP and JavaScript, and I
+            still do plenty of hands on work with WordPress custom themes and plugins.
+          </p>
+          <p className="mt-[11px] pb-[20px] mb-[30px]">
+            More recently, I’ve also been integrating AI into projects
+            to make products smarter and workflows faster. Whether it’s adding
+            AI powered features to an existing platform or building something
+            new from the ground up, I focus on clean architecture, maintainable
+            code, and solutions that are easy to support long term.
+          </p>
         </div>
       </div>
-      <div className="tokyo_tm_button" data-position="left">
-        <a href="assets/img/cv/1.jpg" download>
-          <span>Download CV</span>
-        </a>
-      </div>
-    </Fragment>
+    </div>
   );
 };
 export default Intro;
