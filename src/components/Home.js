@@ -20,7 +20,7 @@ const Home = () => {
               {/* data-type values are: "wave", "circle", "square"*/}
               <div
                 className="image absolute inset-0 bg-no-repeat bg-top bg-cover"
-                data-img-url="assets/img/profile_black_white.png"
+                data-img-url="assets/img/profile_bw_matte.png"
               />
             </div>
             <div className="details ml-[80px]">
