@@ -28,7 +28,7 @@ const Home = () => {
                 Daniel <span>Rodas</span>
               </h3>
               <p className="job font-montserrat font-medium max-w-[450px] mb-[25px]">
-                Senior Web Developer focused on building modern, high performance web experiences and integrating AI into real world products.
+                Senior Frontend Developer focused on building modern, high performance web experiences and integrating AI into real world products.
               </p>
               <div className="social w-full float-left">
                 <ul className="m-0 list-none">
